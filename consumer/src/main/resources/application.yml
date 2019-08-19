@@ -1,0 +1,16 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: pp
+eureka:
+  client:
+    service-url:
+      defaultZone: http://my-eureka1:7001/eureka/,http://my-eureka2:7002/eureka/,http://my-eureka3:7003/eureka/
+  instance:
+    instance-id: service01-pp-8002   #自定义服务名称，在eureka中的名称
+    prefer-ip-address: true   #访问路径显示ip
+
+
+
+
